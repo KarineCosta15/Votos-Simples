@@ -1,0 +1,29 @@
+Algoritmo "Votos para eleição de Síndico" 
+// Função: Soma e porcentagem de votos
+// Autor: Karine Costa 
+var 
+votosbrancos, votosnulos, votosvalidos: inteiro 
+porcbrancos, porcnulos, porcvalidos: real 
+votostotais: inteiro
+inicio 
+escreval ("Votação para síndico 2020 !") 
+escreva ("Informe a quantidade de votos em branco:") 
+leia (votosbrancos) escreva ("Informe a quantidade de votos nulos:") 
+leia (votosnulos) 
+escreva ("Informe a quantidade de votos validos:") 
+leia (votosvalidos) votostotais <- votosbrancos+votosnulos+votosvalidos 
+escreval ("O total de votos foi:", votostotais ) 
+porcbrancos <- (votosbrancos/votostotais) * 100 
+escreval ("A porcentagem de votos em branco foi: ", porcbrancos:2:2 , "%") 
+porcnulos <- (votosnulos/votostotais) * 100 
+escreval ("A porcentagem de votos nulos foi: ", porcnulos:2:2, "%") 
+porcvalidos <- (votosvalidos/votostotais) * 100 
+escreval ("A porcentagem de votos nulos foi: ", porcvalidos:2:2, "%") 
+se 
+(votosbrancos+votosnulos) < votosvalidos 
+entao 
+escreva ("SOMA DOS VOTOS VÁLIDOS MAIOR QUE BRANCOS E NULOS") 
+Senao 
+escreva ("SOMA DOS VOTOS BRANCOS E NULOS ULTRAPASSA OS VÁLIDOS") 
+fimse 
+fimalgoritmo
